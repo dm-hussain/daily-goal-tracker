@@ -12,33 +12,33 @@
   <body
     class="bg-[#48A30012] flex flex-col justify-center items-center px-4 py-4"
   >
-    <h1 class="text-center font-bold text-5xl text-[#48A300]">
+    <h1 class="text-center font-bold text-2xl md:text-5xl text-[#48A300]">
       Focus on <span class="text-[#61481C]"> Today</span>
     </h1>
 
     <div
-      class="container rounded-lg shadow-md mt-9 bg-[#FBFBFB] max-w-[700px] px-10 py-14"
+      class="container rounded-lg shadow-md mt-3 md:mt-9 bg-[#FBFBFB] max-w-[700px]  px-4  py-4  md:px-10 md:py-14 "
     >
       <div
-        class="today-sec flex justify-center items-center gap-4 mt-8 w-52 px-4 py-2"
+        class="today-sec flex justify-center items-center gap-2 md:gap-4 m-auto md:m-0  md:mt-8 w-52 px-4 md:py-2"
       >
-        <h2 class="text-3xl font-bold">Today</h2>
-        <img src="./Sun.png" alt="sun img" />
+        <h2 class="text-xl md:text-3xl font-bold">Today</h2>
+        <img src="./Sun.png" alt="sun img"  class="w-8 md:w-12 md:h-[100%]"/>
       </div>
 
       <div class="mt-8">
-        <p id="task-msg" class="text-[#858585] text-lg font-semibold">
+        <p id="task-msg" class="text-[#858585] text-center md:text-left text-sm md:text-lg font-semibold">
           Raise the bar by completing your goals!
         </p>
       </div>
 
       <div
-        class="progress-bar-outer w-[100%] h-7 bg-[#48A3001A] rounded-full mt-5"
+        class="progress-bar-outer w-[100%] h-4 md:h-7 bg-[#48A3001A] rounded-full mt-10 md:mt-5"
       >
         <div
-          class="progress-bar-inner font-bold text-xs text-[#48A300] bg-[#48A300] h-full rounded-full flex items-center transition-all duration-500 ease-in-out"
+          class="progress-bar-inner font-bold  text-xs text-[#48A300] bg-[#48A300] h-full rounded-full flex items-center transition-all duration-500 ease-in-out"
         >
-          <span class="progress-span ml-4 min-w-max text-[#eeffe0]"> </span>
+          <span class="progress-span ml-2 text-[10px] md:text-sm  md:ml-4 min-w-max text-[#eeffe0]"> </span>
         </div>
       </div>
 
@@ -49,7 +49,7 @@
       <div class="goal-section">
         <div
           id="task-1"
-          class="task-section mt-5 w-[100%] h-20 border-2 border-[#0000001A] rounded-2xl px-5 flex justify-start items-center"
+          class="task-section mt-5 w-[100%] h-12 md:h-20 border-2 border-[#0000001A] rounded-xl md:rounded-2xl px-5 flex justify-start items-center"
         >
           <div
             class="task-inner-sec h-[100%] flex justify-start items-center w-[100%] group"
@@ -71,7 +71,7 @@
 
         <div
           id="task-2"
-          class="task-section mt-5 w-[100%] h-20 border-2 border-[#0000001A] rounded-2xl px-5 flex justify-start items-center"
+          class="task-section mt-5 w-[100%] h-12 md:h-20 border-2 border-[#0000001A] rounded-xl md:rounded-2xl px-5 flex justify-start items-center"
         >
           <div
             class="task-inner-sec h-[100%] flex justify-start items-center w-[100%] group"
@@ -93,7 +93,7 @@
 
         <div
           id="task-3"
-          class="task-section mt-5 w-[100%] h-20 border-2 border-[#0000001A] rounded-2xl px-5 flex justify-start items-center"
+          class="task-section mt-5 w-[100%] h-12 md:h-20 border-2 border-[#0000001A] rounded-xl md:rounded-2xl px-5 flex justify-start items-center"
         >
           <div
             class="task-inner-sec h-[100%] flex justify-start items-center w-[100%] group"
@@ -115,7 +115,7 @@
       </div>
       <!-- ///////// -->
 
-      <p id="quote" class="text-lg font-semibold mt-12 text-center">
+      <p id="quote" class="text-lg font-semibold mt-8 md:mt-12 text-center">
         “Move one step ahead, today!”
       </p>
 
