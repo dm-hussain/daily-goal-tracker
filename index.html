@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus on Today</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body
+    class="bg-[#48A30012] flex flex-col justify-center items-center px-4 py-4"
+  >
+    <h1 class="text-center font-bold text-5xl text-[#48A300]">
+      Focus on <span class="text-[#61481C]"> Today</span>
+    </h1>
+
+    <div
+      class="container rounded-lg shadow-md mt-9 bg-[#FBFBFB] max-w-[700px] px-10 py-14"
+    >
+      <div
+        class="today-sec flex justify-center items-center gap-4 mt-8 w-52 px-4 py-2"
+      >
+        <h2 class="text-3xl font-bold">Today</h2>
+        <img src="./Sun.png" alt="sun img" />
+      </div>
+
+      <div class="mt-8">
+        <p id="task-msg" class="text-[#858585] text-lg font-semibold">
+          Raise the bar by completing your goals!
+        </p>
+      </div>
+
+      <div
+        class="progress-bar-outer w-[100%] h-7 bg-[#48A3001A] rounded-full mt-5"
+      >
+        <div
+          class="progress-bar-inner font-bold text-xs text-[#48A300] bg-[#48A300] h-full rounded-full flex items-center transition-all duration-500 ease-in-out"
+        >
+          <span class="progress-span ml-4 min-w-max text-[#eeffe0]"> </span>
+        </div>
+      </div>
+
+      <p class="warning text-[#FF5151] mt-5 invisible">
+        Please set all the 3 goals!
+      </p>
+
+      <div class="goal-section">
+        <div
+          id="task-1"
+          class="task-section mt-5 w-[100%] h-20 border-2 border-[#0000001A] rounded-2xl px-5 flex justify-start items-center"
+        >
+          <div
+            class="task-inner-sec h-[100%] flex justify-start items-center w-[100%] group"
+          >
+            <img
+              id="checkBox1"
+              class="checkBox cursor-pointer"
+              src="./blank.png"
+              alt=""
+            />
+            <input
+              id="input1"
+              type="text"
+              placeholder="Add new goal..."
+              class="text-[#000000] text-lg px-6 outline-none font-semibold w-[65%] h-[100%] bg-[#FBFBFB] placeholder:text-[#D9D9D9] placeholder:text-sm group-[&.taskCompleted]:text-[#48A300] group-[&.taskCompleted]:line-through"
+            />
+          </div>
+        </div>
+
+        <div
+          id="task-2"
+          class="task-section mt-5 w-[100%] h-20 border-2 border-[#0000001A] rounded-2xl px-5 flex justify-start items-center"
+        >
+          <div
+            class="task-inner-sec h-[100%] flex justify-start items-center w-[100%] group"
+          >
+            <img
+              id="checkBox2"
+              class="checkBox cursor-pointer"
+              src="./blank.png"
+              alt=""
+            />
+            <input
+              id="input2"
+              type="text"
+              placeholder="Add new goal..."
+              class="text-[#000000] text-lg outline-none font-semibold w-[65%] placeholder:text-[#D9D9D9] placeholder:text-sm h-[100%] px-6 bg-[#FBFBFB] group-[&.taskCompleted]:text-[#48A300] group-[&.taskCompleted]:line-through"
+            />
+          </div>
+        </div>
+
+        <div
+          id="task-3"
+          class="task-section mt-5 w-[100%] h-20 border-2 border-[#0000001A] rounded-2xl px-5 flex justify-start items-center"
+        >
+          <div
+            class="task-inner-sec h-[100%] flex justify-start items-center w-[100%] group"
+          >
+            <img
+              id="checkBox3"
+              class="checkBox cursor-pointer"
+              src="./blank.png"
+              alt=""
+            />
+            <input
+              id="input3"
+              type="text"
+              placeholder="Add new goal..."
+              class="text-[#000000] text-lg outline-none bg-[#FBFBFB] font-semibold w-[65%] placeholder:text-[#D9D9D9] placeholder:text-sm h-[90%] px-6 group-[&.taskCompleted]:text-[#48A300] group-[&.taskCompleted]:line-through"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- ///////// -->
+
+      <p id="quote" class="text-lg font-semibold mt-12 text-center">
+        “Move one step ahead, today!”
+      </p>
+
+      <p class="text-xs text-[#858585] mt-16 text-center">
+        Made with ❤️ by Hussain
+      </p>
+    </div>
+  </body>
+</html>
